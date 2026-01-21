@@ -1,0 +1,149 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0f172a;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+/* HERO SECTION */
+.hero {
+    margin-top: 80px;
+    height: 90vh;
+    background: linear-gradient(to right, #2563eb, #38bdf8);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: white;
+    color: #2563eb;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* FEATURES */
+.features {
+    padding: 80px 40px;
+    text-align: center;
+    background: white;
+}
+
+.features h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.feature-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: #f1f5f9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+/* ABOUT / COMMUNITY */
+.about {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* REPORTS */
+.reports {
+    background: #e0f2fe;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
